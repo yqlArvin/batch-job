@@ -7,40 +7,12 @@
         <version>2.3.0-SNAPSHOT</version>
     </parent>
     <artifactId>batch-job-core</artifactId>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
-    <name>${project.artifactId}</name>
-    <description>A distributed task core framework.</description>
-    <url></url>
 
-    <dependencies>
-
-        <!-- ********************** plugin ********************** -->
-
-        <!-- spring-context -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-            <version>${spring.version}</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <!-- ********************** base ********************** -->
-        <!-- slf4j -->
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>${slf4j-api.version}</version>
-        </dependency>
-
-        <!-- javax.annotation-api -->
-        <dependency>
-            <groupId>javax.annotation</groupId>
-            <artifactId>javax.annotation-api</artifactId>
-            <version>${javax.annotation-api.version}</version>
-            <scope>provided</scope>
-        </dependency>
-
-    </dependencies>
+    <modules>
+        <module>batch-core</module>
+        <module>xxl-job-core</module>
+    </modules>
 
 </project>

@@ -11,9 +11,7 @@
     <url></url>
 
     <modules>
-        <module>xxl-job-core</module>
         <module>batch-job-core</module>
-        <module>batch-job-security</module>
         <module>batch-job-manager</module>
         <module>batch-job-executor</module>
     </modules>
